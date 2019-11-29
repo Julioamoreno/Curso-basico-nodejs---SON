@@ -1,0 +1,18 @@
+{
+  "name": "node-basico-son",
+  "version": "1.0.0",
+  "description": "Curso básico de nodejs - school of net",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "node.js",
+    "school",
+    "of",
+    "net"
+  ],
+  "author": "júlio armando",
+  "license": "ISC"
+}
