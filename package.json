@@ -14,5 +14,9 @@
     "net"
   ],
   "author": "júlio armando",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "console-log-hello-world": "^1.0.3"
+  }
 }
