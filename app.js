@@ -4,7 +4,6 @@ var handle = require('./handle')
 
 var events = require('events')
 var emiter = new events.EventEmitter()
-require('console-log-hello-world')
 
 emiter.on('falar',say)
 

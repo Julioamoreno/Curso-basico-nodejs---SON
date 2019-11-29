@@ -1,0 +1,14 @@
+<script type="text/javascript">
+        var socket = new WebSocket("ws://localhost:3000")
+        socket.onopen = function(){
+            socket.send('Im open from client')
+        }
+
+        socket.onmessage = message =>{
+            console.log(message.data)
+        }
+
+        socket.onerror = err=>{
+            console.log('Erro :',err)
+        }
+</script>
