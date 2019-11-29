@@ -1,21 +1,17 @@
 var http = require('http')
 var handle = require('./handle')
 
-// function handle(req,res){
-//     res.writeHead(200,{
-//         'Content-Type':'text/html'
-//     })
+var events = require('events')
+var emiter = new events.EventEmitter()
 
-//         res.write('<!DOCTYPE "html">')
-//         res.write('<html>')
-//         res.write('<head><title> Http Module</title></head>')
-//         res.write('<body>')
-//         res.write('<h1> Hello </h1>')
-//         res.write('</body>')
-//         res.write('</html>')
-    
-//     res.end()
-// }
+emiter.on('falar',say)
+
+function say(){
+    console.log('Im saying..')
+
+}
+
+emiter.emit('falar')
 
 var server = http.createServer(handle)
 
